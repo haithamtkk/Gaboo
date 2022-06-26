@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/gabooo2.css">
+</head>
+<body>
+    <header>
+        <div id="myModal" class="modal">
+      <!-- Hidden login and signup -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="flex-father">
+                  <div id="login">
+                      <form >
+                          <div class="group center-text" style="margin-top:10px;" >
+                         <img src="../image/username.png" width="150px">
+                             <br/> <div class="titel">Login</div>
+                           </div>
+                           <div class="group">
+                              <label>Email</label>
+                              <input type="email" class="input-form" required/>
+                         </div>
+                     
+                         <div class="group">
+                             <label>password</label>
+                             <input type="password" class="input-form" required/>
+                         </div>
+                         <div class="group center-text">
+                             <button type="submit" class="login-btn ">Login</button>
+                         </div>
+                         <div class="group">
+                          <p>Dont Have Account ?<a href="#" onclick="showOrHidden()"> Click Here</a></p>
+                      </div>
+                      </form>
+                  </div>
+                  
+                  <div id="signup">
+                      <form id="signupForm" method="post" onsubmit="return false">
+                          <div class="group center-text" style="margin-top:10px;" >
+                                  <br/> <div class="titel">signup</div>
+                          </div>
+                         
+                          <div class="group">
+                              <label>User Name</label>
+                              <input type="text" class="input-form" required id="name" name="name"/>
+                          </div>
+                          <div class="group">
+                              <label>Email</label>
+                              <input type="email" class="input-form" required id="Email" name="email"/>
+                          </div>
+                          <div class="group">
+                              <label>phone</label>
+                              <input type="text" class="input-form" required id="phone" name="phone"/>
+                          </div>
+                          <div class="group">
+                              <label>password</label>
+                              <input type="password" class="input-form" required id="pass" name="pass"/>
+                          </div>
+                         
+                          <div class="group">
+                              <label>confirm password</label>
+                              <input type="password" class="input-form" required id="confirm" />
+                          </div>
+                         
+                         
+                          <div class="group center-text">
+                              <button type="submit" onclick="cheak(event)" class="login-btn ">signup</button>
+                              <br/>
+                              <span id="notmach"></span>
+                          </div>
+                          <div class="group">
+                            <p>Have Account ?<a href="#" onclick="showOrHidden()"> Click Here</a></p>
+                       </div>
+                          
+                      </form>
+               
+                  </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+          <!-- upper header -->
+        <div class="upper-header container">
+            <ul>
+                <li>gabooo@gmail.com</li>
+                <li>0795119192</li>
+            </ul>
+            <ul>
+               
+                <li class="L"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></i></li>
+                <li class="L"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="L"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a id="myBtn" href="#">Login</a></li>
+                <li><a id="myBtn2"href="#"  >Register</a></li>
+              
+                  
+               
+                
+               
+            </ul>
+        </div>
+
+        <!-- down header -->
+        <div class="down-header">
+            <div class="container">
+                <ul>
+                    <li> <a href="#">Woman</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li class="gabooo">gabooo</li>
+                    <li><a href="#">Summer</a></li>
+                   
+                    <li><a href="#">Fall</a></li>
+                    <li><a href="#">Spring</a></li>
+                    <li><a href="#">Winter</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+ </header>
+ 
+
+ <!-- search navbar -->
+ <div class="search-navbar">
+    <div class="search-navbar-content container">
+          <ul class="h">
+              <li>EN</li>
+              <li>USD</li>
+          </ul>
+          <ul>
+              <li><a href="#">Shopping Cart</a></li>
+              <li><a href="#">Wishlist(7)</a></li>
+              <li><a href="#">checkout</a></li>
+              <li><a href="#">My Account</a></li>
+              <div><input type="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            
+             <div><i class="fa-solid fa-cart-shopping"></i><span>$79.00</span></div>
+          </ul>
+
+  </div>
+</div>
+
+
+<!-- wintert collection -->
+<section class="winter-collection">
+    <div class="winter-collection-content container">
+<div class="section-1">
+    <img class="img1" src="../image/f1.webp">
+    <div>
+        <img class="img2" src="../image/f2.jpg" onclick="Slider('img2')">
+        <img class="img3" src="../image/f1.webp" onclick="Slider('img3')">
+       
+        <img class="img4" src="../image/f4.png" onclick="Slider('img4')">
+    </div>
+</div>
+<div class="section-2">
+    <h2>Winter Collection - Paris JACKET
+        <div class="bor"></div>
+    </h2>
+    <span>$89.99</span>
+    <div class="ul-1">
+      
+        
+        <div class="se1">
+          <select name="quantity" id="Quantity">
+                <option>Size</option>
+                <option>Xl</option>
+                <option>L</option>
+                <option>M</option>
+              </select>
+           </div>
+           <div class="se2">
+            <span>Qty</span><select name="quantity" id="Quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+           </div>
+         
+          
+       
+
+        
+       <div class="color DD"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+       
+       
+        
+        </div>
+    <div class="Buy"> <button>Buy This Item</button></div>
+   
+    <div class="section-2-2">
+        <h3>DETAIL</h3>
+        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br>
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur</p>
+            <ul>
+                <li>Style<i class="fa-solid fa-plus accordion"></i>
+                    <div class="panel">
+                        <p>Good</p>
+                      </div>
+                </li>
+               <li>STYLE<i class="fa-solid fa-plus accordion"></i>
+                <div class="panel">
+                    <p>Good</p>
+                  </div></li>
+                <li>Style<i class="fa-solid fa-plus accordion"></i>
+                    <div class="panel">
+                        <p>Good</p>
+                      </div></li>
+           
+
+
+
+                
+            </ul>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- similar items -->
+<section class="similarItems">
+    <div class="similarItems-content container">
+      <h1>Similar Items</h1>
+      <div class="section-2">
+        <div class="image">
+            <div>
+                <img src="../image/f11.jpg">
+                <h5>PARIS JACKET</h5>
+                <sub>$89.99</sub>
+            </div>
+        
+            <div>
+                <img src="../image/f6.jpg">
+                <h5>PARIS JACKET</h5>
+                <sub>$89.99</sub>
+            </div>
+            <div>
+                <img src="../image/f9.jpg">
+                <h5>PARIS JACKET</h5>
+                <sub>$89.99</sub>
+            </div>
+            <div>
+                <img src="../image/f7.jpg">
+                <h5>PARIS JACKET</h5>
+                <sub>$89.99</sub>
+            </div>
+        
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footer -->
+<nav>
+    <div class="navbar-content container">
+        <div class="section-1">
+        <div>gabooo</div>
+        <p>Vivamus magna justo, lacinia eget consectetur sed, <br>
+            sem. Lorem ipsum dolor sit amet, consectetur adipi</p>
+            <div>Created by Graphberry,Belgrade,Serbia</div>
+            <sub>@2017-Gabooo.Inc</sub>
+        </div>
+        <div class="section-2">
+            <ul>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+            </ul>
+        </div>
+        <div class="section-3">
+            <ul>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="#">Winter</a></li>
+                <li><a href="#">Spring</a></li>
+                <li><a href="#">Summer</a></li>
+                <li><a href="#">Collection</a></li>
+             
+            </ul>
+        </div>
+        <div class="section-4">
+       <h4>Contact Us</h4>
+        <p>Get in touch with us mall phone we are waiting for your call or message</p>
+        <div>graphberry@gmail.com</div>
+        <ul>
+         
+     
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></i></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+
+<script src="../js/gabooo2.js"></script>
+<script src="../js/login.js"></script>
+
+</body>
+</html>
